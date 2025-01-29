@@ -43,4 +43,5 @@ public class WeaponData : ScriptableObject
 
     [Header("Muzzle")]
     public Vector3 muzzle;
+    public Vector3 muzzle_r;
 }

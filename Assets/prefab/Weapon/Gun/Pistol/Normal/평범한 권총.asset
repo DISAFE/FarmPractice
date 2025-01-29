@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c461ceb03ce29de4ea03cefde09b95a2, type: 3}
+  m_Name: "\uD3C9\uBC94\uD55C \uAD8C\uCD1D"
+  m_EditorClassIdentifier: 
+  name: "\uD3C9\uBC94\uD55C \uAD8C\uCD1D"
+  description: "\uC7A5\uB09C\uAC10 \uAD8C\uCD1D\uC740 \uC544\uB2CC \uAC70 \uC544\uC2DC\uC8E0??"
+  icon: {fileID: -205726582, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
+  prefab_weapon: {fileID: 6008989519520868927, guid: 00d96ded612d02b4aa198adca32d1287, type: 3}
+  prefab_bullet: {fileID: 7502098030775785981, guid: cdbd5795ebb0a904196c863b060c174d, type: 3}
+  type: 0
+  damage: 2
+  cooltime: 0.2
+  reloadtime: 1
+  range: 7
+  MC: 12
+  pos: {x: -0.2, y: 0.2, z: 0}
+  ang: {x: 0, y: 0, z: -0.17364818, w: 0.9848077}
+  pos_r: {x: 0.2, y: 0.2, z: 0}
+  ang_r: {x: 0, y: 0, z: 0.17364818, w: 0.9848077}
+  muzzle: {x: 0.2, y: 0.2, z: 0}
+  muzzle_r: {x: -0.2, y: 0.2, z: 0}

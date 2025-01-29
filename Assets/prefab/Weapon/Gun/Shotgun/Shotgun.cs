@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shotgun : Gun
@@ -10,7 +11,7 @@ public class Shotgun : Gun
         for(int i = 0; i < 5; i++)
         {
             GameObject bullet = Instantiate(weaponData.prefab_bullet);
-            bullet.transform.position = transform.position + weaponData.muzzle;
+            bullet.transform.position = transform.position + (mySprite.flipX ? weaponData.muzzle_r : weaponData.muzzle);
             bullet.GetComponent<Bullet>().Setting(NoisePower(power), weaponData.damage, weaponData.range);
         }
         Ammo--;

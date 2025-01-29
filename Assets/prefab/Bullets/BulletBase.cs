@@ -7,7 +7,7 @@ public class BulletBase : MonoBehaviour
     private Vector3 power;
     private float damage;
     private float range;
-    protected float speed;
+    private float speed;
     
 
     public void Setting(Vector3 power, float damage, float range)

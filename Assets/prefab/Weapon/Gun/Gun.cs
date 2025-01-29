@@ -61,7 +61,6 @@ public class Gun : MonoBehaviour
 
     protected virtual void Shot(Vector3 power) // 오버라이드
     {
-        
     }
 
     private void Drawing()
@@ -71,14 +70,12 @@ public class Gun : MonoBehaviour
             mySprite.flipX = true;
             transform.localPosition = weaponData.pos_r;
             transform.localRotation = weaponData.ang_r;
-            weaponData.muzzle.x = -0.2f;
         }
         else 
         {
             mySprite.flipX = false;
             transform.localPosition = weaponData.pos;
             transform.localRotation = weaponData.ang;
-            weaponData.muzzle.x = 0.2f;
         }
     }
     public void CheckingShot(Vector3 power)
