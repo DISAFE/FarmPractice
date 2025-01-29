@@ -28,13 +28,13 @@ public class Tree : MonoBehaviour
     void Start()
     {
         Drawing();
-        DateManager.Main.SeasonChange.AddListener(PlusAge);
+        WorldManager.Main.SeasonChange.AddListener(PlusAge);
     }
 
     private void PlusAge()
     {
         // 성장 로직
-        if(DateManager.Main.season != Season.Spring) // 직전시즌이 겨울이 아닐때만
+        if(WorldManager.Main.season != Season.Spring) // 직전시즌이 겨울이 아닐때만
         {
             if (treeIsStump)
             {
@@ -57,7 +57,7 @@ public class Tree : MonoBehaviour
         }
         else // 잘려있지 않다면
         {
-            if (DateManager.Main.season == Season.Winter) // Winter 로직
+            if (WorldManager.Main.season == Season.Winter) // Winter 로직
             {
                 treeSprite.sprite = unleaf[phase];
             }

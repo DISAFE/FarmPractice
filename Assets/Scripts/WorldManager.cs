@@ -13,9 +13,9 @@ public enum Season
     Winter,
 }
 
-public class DateManager : MonoBehaviour
+public class WorldManager : MonoBehaviour
 {
-    public static DateManager Main;
+    public static WorldManager Main;
     public UnityEvent SeasonChange;
     public UnityEvent YearChange;
     public Season season;
