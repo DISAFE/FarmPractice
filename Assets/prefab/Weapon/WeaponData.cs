@@ -24,16 +24,23 @@ public class WeaponData : ScriptableObject
     public string name;
     public string description;
     public Sprite icon;
-    public GameObject prefab;
+    public GameObject prefab_weapon;
+    public GameObject prefab_bullet;
 
     [Header("Stats")]
-    public Type type;
-    public float Damage;
-    public float cooltime;
+    public Type type; // 속성
+    public float damage; // 데미지
+    public float cooltime; // 쿨타임
+    public float reloadtime; // 재장전 시간
+    public float range; // 사거리
+    public int MC; // 탄창
 
-    [Header("handle")]
+    [Header("Handle")] // 손 위치 포지션
     public Vector3 pos = new(-0.2f, 0.2f, 0);
     public Quaternion ang = Quaternion.Euler(0, 0, -20);
     public Vector3 pos_r = new(0.2f, 0.2f, 0);
     public Quaternion ang_r = Quaternion.Euler(0, 0, 20);
+
+    [Header("Muzzle")]
+    public Vector3 muzzle;
 }

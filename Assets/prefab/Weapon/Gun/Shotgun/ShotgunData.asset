@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c461ceb03ce29de4ea03cefde09b95a2, type: 3}
-  m_Name: Shotgun
+  m_Name: ShotgunData
   m_EditorClassIdentifier: 
-  name: Shotgun(Normal)
-  description: "\uD3C9\uBC94\uD55C \uC0F7\uAC74"
-  icon: {fileID: 563336626, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
-  prefab: {fileID: 6069640351224627991, guid: f90ab92f560eec240a6a128cc7fb5982, type: 3}
+  name: 
+  description: 
+  icon: {fileID: 0}
+  prefab: {fileID: 0}
   type: 0
-  Damage: 5
-  cooltime: 2
+  damage: 0
+  cooltime: 0
+  range: 0
+  MC: 0
   pos: {x: -0.2, y: 0.2, z: 0}
   ang: {x: 0, y: 0, z: -0.17364818, w: 0.9848077}
   pos_r: {x: 0.2, y: 0.2, z: 0}

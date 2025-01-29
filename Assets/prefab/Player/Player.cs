@@ -13,15 +13,15 @@ public class Player : MonoBehaviour
     private Camera mainCamera;
 
     [Header("Hands")]
-    [SerializeField] // ±âº»Àº ÃÑ ÀåÂø
+    [SerializeField] 
     private GameObject equipped;
 
-    [Header("Values")]
+    [Header("Move")]
     private float normalSpeed;
     private RaycastHit hit;
+    private Vector3 playerInput;
 
     [Header("Input")]
-    private Vector3 playerInput;
     private Vector3 mousePoint;
 
 
@@ -33,12 +33,6 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
     }
-
-    void Start()
-    {
-        
-    }
-
     void FixedUpdate()
     {
         Walk();
