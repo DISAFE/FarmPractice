@@ -35,6 +35,6 @@ public class BulletBase : MonoBehaviour
 
     protected void Attack(Collider2D collision)
     {
-        //GameObject Monster = collision.gameObject.GetComponent<HP>.Attacked(damage);
+        GameObject Monster = collision.gameObject.GetComponent<HPManager>().Attacked(damage);
     }
 }

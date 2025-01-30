@@ -4,36 +4,19 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "WeaponData", menuName = "ScriptableObject/WeaponData")]
-public class WeaponData : ScriptableObject
+public class WeaponData : InfoData
 {
-    public enum Type
-    {
-        Normal, // 가장 기본 속성 추가 능력 없음
-        Fire, // 높은 데미지와 지속적인 피해 (적을 불태움)
-        Ice, // 적을 얼려서 속도 감소 및 공격 지연
-        Lightning, // 빠른 다수 타격 및 스턴 효과
-        Poison, // 지속적인 피해와 체력 회복 방해
-        Wind, // 빠르고 민첩한 공격, 회피 또는 이동 속도 증가
-        Light, // 언데드나 어두운 적에게 강한 피해, 회복 및 스턴 효과
-        Darkness, // 체력 흡수 효과로 자신의 체력 회복
-        Earth, // 강력한 물리적 타격과 기절 효과
-        Time, // 공격 속도 또는 적의 행동 느리게, 시간 되돌리기 또는 강화
-    }
-
-    [Header("Info")]
-    public string name;
-    public string description;
+    [Header("WeaponInfo")]
     public Sprite icon;
     public GameObject prefab_weapon;
     public GameObject prefab_bullet;
 
     [Header("Stats")]
-    public Type type; // 속성
-    public float damage; // 데미지
-    public float cooltime; // 쿨타임
-    public float reloadtime; // 재장전 시간
-    public float range; // 사거리
-    public int MC; // 탄창
+    public float damage = 0; // 데미지
+    public float cooltime = 0; // 쿨타임
+    public float reloadtime = 0; // 재장전 시간
+    public float range = 0; // 사거리
+    public int MC = 0; // 탄창
 
     [Header("Handle")] // 손 위치 포지션
     public Vector3 pos = new(-0.2f, 0.2f, 0);
